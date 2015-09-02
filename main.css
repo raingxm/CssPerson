@@ -27,6 +27,35 @@ html, body {
     position: absolute;
 }
 
+.person-body .condoleBelt .left, .person-body .condoleBelt .right {
+    border: 5px solid #000;
+    background: rgb(32,116,160);
+    width: 120px;
+    height: 10px;
+    position: absolute;
+    z-index: 3;
+}
+
+.person-body .condoleBelt .left {
+    -webkit-transform: rotate(45deg);
+    top: -62px;
+    left: -23px;
+}
+
+.person-body .condoleBelt .left::after {
+    width: 8px;
+    height: 8px;
+    background-color: #000;
+    border-radius: 4px;
+    position: absolute;
+}
+
+.person-body .condoleBelt .right {
+    -webkit-transform: rotate(-45deg);
+    top: -62px;
+    left: 133px;
+}
+
 .person-body .trousers {
     position: absolute;
     bottom: 0;
