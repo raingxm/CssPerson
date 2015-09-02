@@ -30,7 +30,7 @@ html, body {
 .person-body .condoleBelt .left, .person-body .condoleBelt .right {
     border: 5px solid #000;
     background: rgb(32,116,160);
-    width: 120px;
+    width: 80px;
     height: 10px;
     position: absolute;
     z-index: 3;
@@ -38,8 +38,14 @@ html, body {
 
 .person-body .condoleBelt .left {
     -webkit-transform: rotate(45deg);
-    top: -62px;
+    top: -86px;
     left: -23px;
+}
+
+.person-body .condoleBelt .right {
+    -webkit-transform: rotate(-45deg);
+    top: -84px;
+    left: 170px;
 }
 
 .person-body .condoleBelt .left:after,
@@ -54,18 +60,12 @@ html, body {
 
 .person-body .condoleBelt .left:after {
     top: 1px;
-    left: 100px;
+    left: 60px;
 }
 
 .person-body .condoleBelt .right:after {
     top: 1px;
     left: 13px;
-}
-
-.person-body .condoleBelt .right {
-    -webkit-transform: rotate(-45deg);
-    top: -62px;
-    left: 133px;
 }
 
 .person-body .trousers {
@@ -86,4 +86,8 @@ html, body {
     position: absolute;
     bottom: 100px;
     left: 34px;
+}
+
+.pocket {
+
 }
