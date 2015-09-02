@@ -42,12 +42,24 @@ html, body {
     left: -23px;
 }
 
-.person-body .condoleBelt .left::after {
+.person-body .condoleBelt .left:after,
+.person-body .condoleBelt .right:after {
     width: 8px;
     height: 8px;
+    content: '';
     background-color: #000;
     border-radius: 4px;
     position: absolute;
+}
+
+.person-body .condoleBelt .left:after {
+    top: 1px;
+    left: 100px;
+}
+
+.person-body .condoleBelt .right:after {
+    top: 1px;
+    left: 13px;
 }
 
 .person-body .condoleBelt .right {
