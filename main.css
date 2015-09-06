@@ -95,3 +95,13 @@ html, body {
     margin: 0 auto;
     border-radius: 0 0 20px 20px;
 }
+
+.line-left {
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    border-right: 5px solid #000;
+    border-bottom: 5px solid #000;
+    top: 10px;
+    border-radius: 0 0 40px 0;
+}
