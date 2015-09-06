@@ -105,3 +105,14 @@ html, body {
     top: 10px;
     border-radius: 0 0 40px 0;
 }
+
+.line-right {
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    border-left: 5px solid #000;
+    border-bottom: 5px solid #000;
+    top: 10px;
+    right: 2px;
+    border-radius: 0 0 0 40px;
+}
