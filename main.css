@@ -4,7 +4,7 @@ html, body {
 }
 
 .container {
-    width: 800px;
+    width: 240px;
     margin: 100px auto;
 }
 
@@ -89,5 +89,9 @@ html, body {
 }
 
 .pocket {
-
+    width: 60px;
+    height: 40px;
+    border: 5px solid #000;
+    margin: 0 auto;
+    border-radius: 0 0 20px 20px;
 }
