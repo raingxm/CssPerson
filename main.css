@@ -224,4 +224,48 @@ html, body {
     position: absolute;
     top: -16px;
     -webkit-transform: rotate(35deg);
+    -webkit-animation: mouse_mask 5s ease-in-out infinite;
+}
+
+.feet {
+    position: relative;
+}
+
+.feet .foot {
+    width: 40px;
+    height: 35px;
+    background: #000;
+    position: absolute;
+}
+
+.feet .left-foot {
+    top: 404px;
+    left: 74px;
+}
+
+.feet .left-foot:after {
+    content: '';
+    width: 80px;
+    height: 37px;
+    background: #000;
+    position: absolute;
+    top: 31px;
+    left: -40px;
+    border-top-left-radius: 33px;
+}
+
+.feet .right-foot {
+    top: 404px;
+    right: 74px;
+}
+
+.feet .right-foot:after {
+    content: '';
+    width: 80px;
+    height: 37px;
+    background: #000;
+    position: absolute;
+    top: 31px;
+    right: -40px;
+    border-top-right-radius: 33px;
 }
