@@ -226,6 +226,61 @@ html, body {
     -webkit-transform: rotate(35deg);
     -webkit-animation: mouse_mask 5s ease-in-out infinite;
 }
+.hands{
+	position: relative;
+}
+.hands .leftHand,
+.hands .rightHand{
+	width: 80px;
+	height: 80px;
+	border:6px solid #000;
+	border-radius: 25px;
+	background: rgb(249,217,70);
+	position: absolute;
+	top:220px;
+	left:-23px;
+	-webkit-transform:rotate(40deg);
+	-webkit-animation:rightHand .8s ease-in-out infinite;
+}
+@-webkit-keyframes rightHand{
+	0%,50%,100%{
+		-webkit-transform: rotate(40deg);
+	}
+	30%{
+		-webkit-transform: rotate(37deg) translateX(1px);
+	}
+}
+.hands .leftHand{
+	left:182px;
+	top:220px;
+	-webkit-transform:rotate(-40deg);
+	-webkit-animation:leftHand .8s ease-in-out infinite;
+}
+@-webkit-keyframes leftHand{
+	0%,50%,100%{
+		-webkit-transform: rotate(-40deg);
+	}
+	80%{
+		-webkit-transform: rotate(-37deg) translateX(-1px);
+	}
+}
+.hands .leftHand:after,
+.hands .rightHand:after{
+	content: '';
+	width: 6px;
+	border:3px solid #000;
+	border-radius: 3px;
+	position: absolute;
+	left:13px;
+	top:50px;
+	-webkit-transform:rotate(90deg);
+}
+
+.hands .leftHand:after{
+	left:53px;
+	top:50px;
+	-webkit-transform:rotate(-90deg);
+}
 
 .feet {
     position: relative;
@@ -280,7 +335,14 @@ html, body {
     height: 9px;
     background: #B4B4B4;
     position: absolute;
+<<<<<<< Updated upstream
     border-radius: 50%;
     top: 455px;
     left: 25px;
 }
+=======
+    top: 31px;
+    right: -40px;
+    border-top-right-radius: 33px;
+}
+>>>>>>> Stashed changes
