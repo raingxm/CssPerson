@@ -274,3 +274,13 @@ html, body {
     border-radius: 10px 20px 15px 21px;
     -webkit-transform:rotate(-5deg);
 }
+
+.feet-shadow {
+    width: 200px;
+    height: 9px;
+    background: #B4B4B4;
+    position: absolute;
+    border-radius: 50%;
+    top: 455px;
+    left: 25px;
+}
